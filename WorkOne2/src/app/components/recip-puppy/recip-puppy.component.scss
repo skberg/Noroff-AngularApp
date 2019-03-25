@@ -1,0 +1,46 @@
+$mainColor: #494949;
+$mainColor2: #8a8a8a;
+$borderColor: #f5deb3;
+$elementColor: #BD624A;
+$elementColor2: #3D6183;
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minnmax(250px, 1fr));
+    background-color: #ffff;
+    grid-gap: 25px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+  
+   h2{
+      
+      border-bottom: #D7443F 5px solid;
+      border-width: 5%;
+      
+   }
+   .card-icon{
+       text-align: center;
+      
+       background-color: #D7443F;
+       color: #ffff;
+       border-radius: 10px 10px 10px 10px;
+       
+   }
+   img{
+       border-radius: 50%;
+       height: 190px;
+       width: 190px;
+       margin: 0px;
+       border: #ffff 5px solid;
+     
+       
+       
+   }
+   ul{
+    list-style-type: circle;
+     
+    
+    
+
+   }
+}

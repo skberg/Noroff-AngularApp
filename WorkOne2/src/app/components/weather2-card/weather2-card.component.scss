@@ -1,0 +1,46 @@
+$mainColor: #494949;
+$mainColor2: #8a8a8a;
+$borderColor: #f5deb3;
+$elementColor: #BD624A;
+$elementColor2: #3D6183;
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    grid-template-columns: repeat(auto-fill, minnmax(250px, 3fr));
+    background-color: #ffff;
+    margin: 40px auto;
+    
+    
+    border-radius: 15px;
+    h2{
+        padding: 10px;
+        border-bottom: $mainColor 5px solid;
+        width: 50%;
+        background-color: $elementColor2;
+        border-radius: 0px 10px 10px 0px;
+    }
+    h5{
+        padding: 10px;
+        width: 30%;
+        border-bottom: #3D6183 5px solid;
+        font-size: 25px;
+    }
+    .global{
+        transform: rotate(90deg);
+        font-size: 1rem;
+        padding-left: 50px;
+        
+    }
+   
+   .card-icon{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    background-color: $elementColor2;
+    color: #ffff;
+    border-radius: 5px 10px 5px 10px;
+   }
+   ul{
+    font-size: 0.8rem;
+   }
+}

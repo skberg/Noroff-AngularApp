@@ -1,0 +1,32 @@
+$mainColor: #494949;
+$mainColor2: #8a8a8a;
+$borderColor: #f5deb3;
+$elementColor: #BD624A;
+$elementColor2: #3D6183;
+$GreenColor: #84A563;
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minnmax(250px, 1fr));
+    width: 100%;
+    .card-item{
+      padding: 20px;
+    
+    }
+    .H1{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+        border-bottom: 5px solid #84A563;
+      
+    }
+}
+.card:hover{
+    box-shadow: 0px 3px 34px 0px rgba(0,0,0,0.75);
+    transition: 2s;
+}
+
+
+
+
+
+ 

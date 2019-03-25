@@ -1,0 +1,66 @@
+<div class="main-wrap">
+     <div class="nabvar-center">
+      <button class="button_center1"  (click)="showpach = 1" ><li ><i class="fas fa-map-pin"></i></li></button>
+      <button class="button_center2"  (click)="showpach = 2" ><li ><i class="fas fa-globe"></i></li></button>
+      <button class="button_center3"  (click)="showpach = 3" ><li><i class="fas fa-passport"></i></li></button>
+      <button  class="button_center4" (click)="showpach = 4" ><li ><i class="fas fa-utensils"></i></li></button>
+      </div>
+    <div class="sidebar">
+       
+      <div class="sidbare-left">
+       
+      <button  (click)="showpach = 1" ><li class="button_left"><i class="fas fa-map-pin"></i></li></button>
+      <button  (click)="showpach = 2" ><li class="button_left"><i class="fas fa-globe"></i></li></button>
+      <button (click)="showpach = 3" ><li class="button_left"><i class="fas fa-passport"></i></li></button>
+      <button (click)="showpach = 4" ><li class="button_left"><i class="fas fa-utensils"></i></li></button>
+    
+
+    </div>
+    <h3 class="sidbare-left-tekst">Settings</h3>
+    </div>
+    <div *ngIf="showpach == 1" >
+<div *ngIf="weatherData.length > 0">
+ <h1>Forcast</h1>
+  <div class="container">
+  <app-weather-card  *ngFor="let singulerWeather of weatherData" [weatherItem]="singulerWeather"></app-weather-card>
+  
+</div>
+</div>
+</div>
+
+
+
+<div *ngIf="showpach == 2" >
+
+<div *ngIf="weather2Data.length > 0">
+    <h1>Globel-Forcast</h1>
+     <div class="container">
+     <app-weather2-card  *ngFor="let singulerWeather of weather2Data" [weatherItem]="singulerWeather"></app-weather2-card>
+  
+   </div>
+   </div>
+
+</div>
+
+
+
+
+<div *ngIf="showpach == 3" >
+   <div *ngIf="tropicData.length > 0">
+      <h1>Tropic-destinations <i class="fas fa-island-tropical"></i></h1>
+       <div class="container">
+       <app-topic-cards  *ngFor="let singulertropic of tropicData" [TopicalItem]="singulertropic"></app-topic-cards>
+       
+     </div>
+     </div> 
+</div>
+
+<div *ngIf="showpach == 4" >
+   <div *ngIf="PuppyData.length > 0">
+      <h1>Recipes</h1>
+       <div class="container">
+       <app-recip-puppy *ngFor="let singulerPuppy of PuppyData" [RecipPuppy]="singulerPuppy"></app-recip-puppy>
+       
+     </div>
+     </div> 
+</div>

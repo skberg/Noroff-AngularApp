@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="card">
+      <div class="card-icon">
+       <img [src]="RecipPuppy.thumbnail" alt="img">
+      </div>
+        <div class="card-title">
+          <h2>{{RecipPuppy.title}}</h2>
+      
+        </div>
+          <div class="card-item">
+            <ul class="ul">
+         <li *ngFor="let listItem of list">
+            {{listItem}}
+         </li>
+          </ul>
+          </div>
+       
+    </div>
+    </div>
