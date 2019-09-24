@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-url: https://anguler-wheather-and-food-service.netlify.com/
+# Url
+ https://anguler-wheather-and-food-service.netlify.com/
 
 
 
